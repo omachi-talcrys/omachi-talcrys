@@ -1,0 +1,29 @@
+# This is my .ipynb assignment
+print("This is my homework assignment.")
+
+# Introducing myself
+print("My name is Chioma")
+
+# Ask for name
+name = input("What is your name?")
+
+# Compliment name
+print(f"That's a great name, {name}")
+
+# Ask for age?
+age_response = (input("How old are you?"))
+
+# In case input included 'years old' split for age in numbers
+age_parts = age_response.split()
+age = None
+
+for part in age_parts:
+    if part.isdigit():
+        age = int(part)
+
+# Calculate difference in age
+diff_in_age = abs(age - 23)
+
+# Tell my age
+print(f"That is amazing, you are {age} and I am 23 years old. That means we are {diff_in_age} years apart.")
+
